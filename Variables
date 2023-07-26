@@ -1,0 +1,87 @@
+Deðiþkenler
+*** C# Programlama Dilinde ön tanýmlý 15 tane tip vardir...
+
+Deðiþkenler
+1-Deger Tipli Deðiþkenler Value Types
+   byte    1
+   sbyte   1(+,-)
+   short   2(+,-)
+   ushort  2
+   int     4(+,-) ***
+   uint    4
+   long    8(+,-)
+   ulong   8
+   -----------
+   float   32 bit
+   double  64 bit ***
+   decimal 128 bit
+   -----------
+   bool    1 bit 
+   char    2 byte 'A'
+2-Referans Tipli Deðiþkenler Reference Type
+   string : Karakter katarý(dizi)....
+   object : OOP
+
+1 bit =[0,1]
+1 byte =8 bit
+
+       00000000 =>(Min) =0
+       11111111 =>(Max) =255
+       
+//Değişken kullanma
+int sayi;
+bool kontrol;
+char karakter = 'A';
+double fiyat = 55.90;
+string isim = "Cevdet";
+int s1, s2;
+int s3=1, s4=3;
+sayi = 12;
+Console.WriteLine(sayi);
+
+
+var d1 = 12;
+var d2 = "Cevdet";
+
+var d6 = 44.55;
+var d3 = 44.55M;
+var d4 = 44.55F;
+
+var ad = Console.ReadLine();
+
+//----------------------------------------------------------------
+
+//Static degiskenler...
+
+4 ayrı class şekli ve ayrıca ramin stack heap ve statik bölümlerini gözünün önüne getir.
+Değişken static bölümünde bir defa tanımlandığında her alınan instance statikteki değişken sayacını arttırır.
+Yani her bir classtan static bölümüne ok gittiğini düşün.
+
+Asker sınıfından t anında ramde ne kadar var?
+bir şeyin ne kadar olduğu sayaçla hesaplanabilir.
+Asker class ı içinde static int sayac = 0;
+ctor içine sayac++ ve cw
+
+ramin static bölgesinde tutulurlar ve tek bir kopyadırlar.
+burada sayaç her asker instance ı alınışında bir artar
+
+
+internal class Asker
+    {
+        static int sayac = 0;
+
+        public Asker()
+        {
+            sayac++;
+            Console.WriteLine("Sayac=" +sayac);
+        }
+    }
+
+Asker asker1 = new Asker();
+Asker asker2 = new Asker();
+Asker asker3 = new Asker();
+Asker asker4 = new Asker();
+Asker asker5 = new Asker();
+
+       
+       
