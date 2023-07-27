@@ -50,6 +50,85 @@ var d4 = 44.55F;
 var ad = Console.ReadLine();
 
 //----------------------------------------------------------------
+Mert Hocadan gelen;
+
+//Ctrl-kc Yorum satırına alma
+    //Ctrl-ku Yorum satırından çıkarma
+
+
+    //Degişken Nedir? 
+    // Değişkenleri en sabit şekilde verilerin deponlandığı yerler olarak tanımlarız.
+    //Değişkenlerin içine verilerimizi kaydedebiliriz veya değişkenlerimizin içindeki verileri c# programındaki işlemlerimiz için kullanabiliriz.
+
+    //Değişkenlerin Kuralları 
+    //Kullamayacagımız değişkenleri asla tanımlamamalıyız.
+    //Deger aralıklarına göre dogru veri tipi secmeye özen göstermeliyiz.
+    //Bir değilenin adi asla iki kelime olamaz. Eger iki kelime ise mutalaka (_), (-) özel karakter ile birbirinden ayrılmalıdır.
+    //Değişkenlerin adları asla sayı ile başlayamaz. Yalnız sayı ile bitebilir.
+
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello World!");
+      Console.WriteLine("Melike");
+      Console.WriteLine("16");
+      Console.WriteLine(16);
+
+      //Değişken Oluşturma
+      //VeriTipi değişkenAdi = degişkenDegeri.
+      //VeriTipi değişkenAdi;
+
+
+      //Sayısal Veri Tipleri
+      //sByte max 127 
+      //sByte min -127 
+      sbyte degiskenBir = 24;
+
+      byte degisken_Iki = 45;
+
+      ushort degisken3 = 127;
+
+      short degiskenDort = -2565;
+
+      int degiskenBes = -154455;
+
+      uint degiskenAlti = 32654565;
+
+      long degiskenYedi = -5545265;
+
+      ulong degisken8 = 545455;
+
+      double degisken9 = 1.4525;
+      float ondalikliBir = 1.158F;
+      decimal ondalikliIki = 1.445M;
+
+      //Metilsel Veri Tipi 
+
+      // String veri tipi sınırsızdır.
+      string isim = "Alper";
+
+      // Char tek karakter tutar.
+      char basHarfi = 'A';
+
+      //Mantıksal Veri Tipi 
+      // Bool True, False
+
+      bool askerlikDurumu = true;
+
+      //Örnek 1
+
+      string bosMetin = "";
+      string uzunMetin = "Buraya öyle uzun bir metin yazılırdı ki kimse gözlerine inanamazdı...";
+
+      Console.WriteLine(bosMetin);
+      Console.WriteLine(uzunMetin);
+
+
+      bool bugunTatilMi = false;
+      bool buyukMu = 10 > 2;
+    }
+  }
+
+//----------------------------------------------------------------
 
 //Static degiskenler...
 
